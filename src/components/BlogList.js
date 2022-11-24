@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const BlogList = (props) => {
     const Blogs = props.blogs;
     const Title = props.title
-    const Delete = props.handleDelete
+    // const Delete = props.handleDelete
     return (
         <div className="blog-list">
             <h2> { Title } </h2>
