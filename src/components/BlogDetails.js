@@ -12,7 +12,7 @@ const BlogDetails = () => {
         }).then((data)=>{
             setBlogs(data)
         })
-    }, ['id']);
+    }, [id]);
 
     const handleClick = () => {
         fetch('http://localhost:5000/blogs/' + Blogs.id, {
