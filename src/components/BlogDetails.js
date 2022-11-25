@@ -7,7 +7,7 @@ const BlogDetails = () => {
     const [Blogs, setBlogs] = useState([]);
 // add id to line 10
     useEffect(() => {
-        fetch('http://localhost:5000/blogs/').then((res) => {
+        fetch('http://localhost:5000/blogs/' + id).then((res) => {
             return res.json()
         }).then((data)=>{
             setBlogs(data)
